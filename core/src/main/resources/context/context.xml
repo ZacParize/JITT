@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="fileDataReader" class="com.britebill.interview.main.FileDataReader" />
+
+    <bean id="statisticsCalculator" class="com.britebill.interview.statistics.calculator.StatisticsCalculator" />
+
+    <bean id="xmlTextStatistics" class="com.britebill.interview.statistics.writers.XmlStatisticsWriter" />
+
+    <bean id="jsonTextStatistics" class="com.britebill.interview.statistics.writers.JsonStatisticsWriter" />
+
+    <bean id="transformerData" class="com.britebill.interview.transformers.TransformerData" />
+
+</beans>

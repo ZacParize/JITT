@@ -1,0 +1,12 @@
+<xsd:schema attributeFormDefault="unqualified" elementFormDefault="qualified" version="1.0" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <xsd:element name="Statistics">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="TotalNumberOfWords" type="xsd:unsignedInt" />
+                <xsd:element name="TotalNumberOfUniqueWords" type="xsd:unsignedInt" />
+                <xsd:element name="AverageCharactersPerWord" type="xsd:unsignedInt" />
+                <xsd:element name="MostRepeatedWord" type="xsd:string" />
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+</xsd:schema>
